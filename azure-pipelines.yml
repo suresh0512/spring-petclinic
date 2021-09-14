@@ -15,8 +15,8 @@ steps:
 jobs:  
 - deployment: VMDeploy
   displayName: web
-  environment:
-    name:  
+  environment: 
+    name: Test  
     resourceType: VirtualMachine
     tags: web
   strategy:
