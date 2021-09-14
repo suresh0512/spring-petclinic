@@ -12,6 +12,7 @@ steps:
     - upload: $(Build.ArtifactStagingDirectory)
       artifact: drop
 
+trigger:
 - deployment: VMDeploy
   displayName: web
   environment: 
