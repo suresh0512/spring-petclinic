@@ -1,4 +1,5 @@
-- job: Build
+- job: 
+        Build
     displayName:'Build Maven Project'
     steps:
     - task:Maven@3
