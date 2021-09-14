@@ -1,6 +1,4 @@
-- job: Build
-    displayName: 'Build Maven Project'
-    steps:
+steps:
     - task: Maven@3
       displayName: 'Maven Package'
       inputs:
