@@ -14,7 +14,7 @@ steps:
 
 trigger:
 - deployment: VMDeploy
-  displayName: web
+  displayName: 'web'
   environment: 
     name: Test  
     resourceType: VirtualMachine
