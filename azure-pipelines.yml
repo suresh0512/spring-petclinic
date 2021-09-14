@@ -1,13 +1,11 @@
-- job: 
-        Build
-    displayName:'Build Maven Project'
+    displayName: 'Build Maven Project'
     steps:
     - task:Maven@3
-      displayName:'Maven Package'
+      displayName: 'Maven Package'
       inputs:
         mavenPomFile:'pom.xml'
     - task: CopyFiles@2
-      displayName:'Copy Files to artifact staging directory'
+      displayName: 'Copy Files to artifact staging directory'
       inputs:
         SourceFolder:'$(System.DefaultWorkingDirectory)'
         Contents: '**/target/*.?(war|jar)'
