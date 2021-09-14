@@ -12,11 +12,18 @@ steps:
     - upload: $(Build.ArtifactStagingDirectory)
       artifact: drop
 
-trigger:
+
+jobs:
 - deployment: VMDeploy
-  displayName: 'web'
-  environment: 
-    name: Test  
+  displayName: web
+  pool:
+    vmImage: 'ubuntu-latest'
+  environment:
+    name: Test
     resourceType: VirtualMachine
     tags: web
   strategy:
+    runOnce:
+      deploy:
+        steps:
+        - script: echo my first deployment
