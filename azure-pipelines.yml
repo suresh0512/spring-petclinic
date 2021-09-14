@@ -11,7 +11,7 @@ steps:
         TargetFolder: $(Build.ArtifactStagingDirectory)
     - upload: $(Build.ArtifactStagingDirectory)
       artifact: drop
-      
+jobs:     
 - deployment: VMDeploy
   displayName: web
   pool:
