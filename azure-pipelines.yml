@@ -25,3 +25,12 @@ jobs:
       deploy:
         steps:
         - script: echo my first deployment
+
+jobs:  
+- deployment: VMDeploy
+  displayName: web
+  environment:
+    name:  <environment name>
+    resourceType: VirtualMachine
+    tags: web1
+  strategy:
