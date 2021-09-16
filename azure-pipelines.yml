@@ -11,3 +11,14 @@ steps:
         TargetFolder: $(Build.ArtifactStagingDirectory)
     - upload: $(Build.ArtifactStagingDirectory)
       artifact: drop
+
+jobs:
+- deployment: VMDeploy
+  displayName: webDeployment
+  pool:
+    vmImage: 'ubuntu-latest'
+  environment:
+    name: Ubuntu-Dev
+    resourceType: VirtualMachine
+    tags: web
+
