@@ -30,7 +30,7 @@ jobs:
 - deployment: VMDeploy
   displayName: web
   environment:
-    name:  <environment name>
+    name: Ubuntu-Dev
     resourceType: VirtualMachine
-    tags: web1
+    tags: web
   strategy:
