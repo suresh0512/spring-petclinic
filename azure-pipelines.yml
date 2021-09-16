@@ -26,7 +26,7 @@ jobs:
         steps:
         - script: echo my first deployment
 
-jobs:  
+  
 - deployment: VMDeploy
   displayName: web
   environment:
